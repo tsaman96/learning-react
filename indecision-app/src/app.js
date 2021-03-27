@@ -1,18 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import IndecisionApp from './components/IndecisionApp';
-import './styles/styles.scss'
-import 'normalize.css/normalize.css'
-
-// const Layout = (props) => {
-//   return (
-//     <div>
-//       <h3>Header</h3>
-//       {props.children}
-//       <p>Footer</p>
-//     </div>
-//   );
-// };
+import './styles/styles.scss';
+import 'normalize.css/normalize.css';
 ReactDOM.render(<IndecisionApp />, document.getElementById('App'));
 
 

@@ -4,7 +4,7 @@ import Options from './Options';
 import Action from './Action';
 import Header from './Header';
 import OptionModal from './OptionModal';
- class IndecisionApp extends React.Component {
+class IndecisionApp extends React.Component {
   state = {
     options: [],
     selectedOptions: undefined
@@ -43,44 +43,43 @@ import OptionModal from './OptionModal';
       <div>
         <Header subtitle={subtitle} />
         <div className="container">
-        <Action
-          hasOptions={this.state.options.length > 0}
-          handlePick={this.handlePick}
-        />
-        <div className="widget">
-        <Options
-          options={this.state.options}
-          handleDeleteOptions={this.handleDeleteOptions}
-          handleDeleteOption={this.handleDeleteOption}
-        />
-        <AddOption
-          handleAddOption={this.handleAddOption}
-        />
+          <Action
+            hasOptions={this.state.options.length > 0}
+            handlePick={this.handlePick}
+          />
+          <div className="widget">
+            <Options
+              options={this.state.options}
+              handleDeleteOptions={this.handleDeleteOptions}
+              handleDeleteOption={this.handleDeleteOption}
+            />
+            <AddOption
+              handleAddOption={this.handleAddOption}
+            />
+          </div>
         </div>
-        </div>
-        <OptionModal 
+        <OptionModal
           selectedOptions={this.state.selectedOptions}
           handleClearPick={this.handleClearPick}
         />
       </div>
     );
   }
-  componentDidMount(){
+  componentDidMount() {
     try {
       const json = localStorage.getItem('options');
-      const options =JSON.parse(json);
-      if(options)
-     { this.setState(() => ({options}))}
-    } catch(e) {
+      const options = JSON.parse(json);
+      if (options) { this.setState(() => ({ options })) }
+    } catch (e) {
 
     }
-}
-componentDidUpdate(prevState, prevProps){
-    if(prevState.options.length!==this.state.options.length){
+  }
+  componentDidUpdate(prevState, prevProps) {
+    if (prevState.options.length !== this.state.options.length) {
       const json = JSON.stringify(this.state.options);
       localStorage.setItem('options', json)
     }
-}
+  }
 }
 IndecisionApp.defaultProps = {
   options: []

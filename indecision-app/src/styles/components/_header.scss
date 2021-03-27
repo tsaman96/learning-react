@@ -1,14 +1,12 @@
-.header{
+.header {
   background-color: $off-black;
   color: white;
-  margin-bottom: $m-size ;
+  margin-bottom: $m-size;
   padding: $m-size 0;
-  
 }
 .header__title {
   font-size: $xl-size;
   margin: 0;
-  
 }
 .header__subtitle {
   font-size: $l-size;
@@ -17,7 +15,7 @@
   margin: 0;
 }
 @media (min-width: $break-point) {
-  .header{
-    margin-bottom: $xl-size ;
+  .header {
+    margin-bottom: $xl-size;
   }
 }

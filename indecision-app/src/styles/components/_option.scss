@@ -1,8 +1,8 @@
 .option {
-border-bottom: .1rem solid lighten($light-blue, 10%);
-display: flex;
-justify-content: space-between;
-padding: $l-size $m-size;
+  border-bottom: 0.1rem solid lighten($light-blue, 10%);
+  display: flex;
+  justify-content: space-between;
+  padding: $l-size $m-size;
 }
 .option__text {
   color: white;

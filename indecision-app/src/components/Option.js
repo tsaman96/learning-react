@@ -1,12 +1,3 @@
-// class Option extends React.Component {
-//   render() {
-//     return (
-//       <div>
-//         {this.props.optionText}
-//       </div>
-//     );
-//   }
-// }
 import React from 'react';
 const Option = (props) => (
   <div className="option">

@@ -14,17 +14,17 @@
 .add-option__input {
   background: $dark-blue;
   border: none;
-  border-bottom: .3rem solid darken($dark-blue, 10%);
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
   color: $off-white;
   flex-grow: 1;
   margin-bottom: $s-size;
   padding: $s-size;
 }
 @media (min-width: $break-point) {
-  .add-option{
+  .add-option {
     flex-direction: row;
   }
-  .add-option__input{
+  .add-option__input {
     margin: 0 $s-size 0 0;
   }
 }

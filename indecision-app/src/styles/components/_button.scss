@@ -1,7 +1,7 @@
 .big-button {
   background-color: $purple;
   border: none;
-  border-bottom: .6rem solid darken($purple, 10%);
+  border-bottom: 0.6rem solid darken($purple, 10%);
   font-weight: bold;
   font-size: $l-size;
   margin-bottom: $xl-size;
@@ -10,12 +10,12 @@
   color: white;
 }
 .big-button:disabled {
-  opacity: .5;
+  opacity: 0.5;
 }
 .button {
   background-color: $purple;
   border: none;
-  border-bottom: .3rem solid darken($purple, 10%);
+  border-bottom: 0.3rem solid darken($purple, 10%);
   font-weight: 500;
   padding: $s-size;
   color: white;
@@ -27,7 +27,7 @@
   padding: none;
 }
 @media (min-width: $break-point) {
-  .big-button{
-    margin-bottom: $xl-size ;
+  .big-button {
+    margin-bottom: $xl-size;
   }
 }
